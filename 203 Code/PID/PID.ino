@@ -111,23 +111,25 @@ void pi_control(int k_p, int k_i)
   u_r = k_p*e_now_r + k_i*e_sum_r;
 
 // u_l control ouput constraint
-  if (u_l > 255 )
-  {
-    u_l = 255;
+  if (u_l > 255) {
+      u_l = 255;
+      e_sum_l -= e_now_l;  // Anti-windup
   }
-  else if (u_r < -255)
-  {
-    u_l = -255;
+  else if (u_l < -255) {
+      u_l = -255;
+      e_sum_l -= e_now_l;  // Anti-windup
   }
   
 // u_r control output constraint
   if (u_r > 255 )
   {
     u_r = 255;
+    e_sum_r -= e_now_r;
   }
   else if (u_r < -255)
   {
     u_r = -255;
+    e_sum_r -= e_now_r;
   }
 
 //direction flag
@@ -188,7 +190,7 @@ void loop() {
       
       error_wheel_l(v_d, vel_L, omega, L);
       error_wheel_r(v_d, vel_R, omega, L);
-      pi_control(0,5);
+      pi_control(10,2);
 
       // Print some stuff to the serial monitor 
       // Serial.print("Estimated left wheel speed Left: ");
@@ -215,7 +217,7 @@ void loop() {
     }
 
   
-  if (dir_l = 0)
+  if (dir_l == 0)
   {
     digitalWrite(I1, LOW);
     digitalWrite(I2, HIGH);
@@ -224,7 +226,7 @@ void loop() {
     digitalWrite(I2, LOW);
   }
 
-  if (dir_r = 1)
+  if (dir_r == 1)
   {
     digitalWrite(I3, LOW);
     digitalWrite(I4, HIGH);
