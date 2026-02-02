@@ -42,7 +42,6 @@ const double RHO = 0.0625;
 //track length
 const double L = 0.2775;
 
-
 // Counter to keep track of encoder ticks [integer]
 volatile long encoder_ticks_a = 0;
 volatile long encoder_ticks_b = 0;
