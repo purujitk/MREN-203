@@ -33,7 +33,7 @@ void loop()
 
     sharp_range = 5980 / (sharp_val + 8);
 
-    Serial.print("Range [CM]: ")
+    Serial.print("Range [CM]: ");
     Serial.print(sharp_range);
     Serial.print("\n");
 
