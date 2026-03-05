@@ -1,0 +1,12 @@
+package.xml
+setup.cfg
+setup.py
+my_rover_navigation/__init__.py
+my_rover_navigation.egg-info/PKG-INFO
+my_rover_navigation.egg-info/SOURCES.txt
+my_rover_navigation.egg-info/dependency_links.txt
+my_rover_navigation.egg-info/entry_points.txt
+my_rover_navigation.egg-info/requires.txt
+my_rover_navigation.egg-info/top_level.txt
+my_rover_navigation.egg-info/zip-safe
+resource/my_rover_navigation
