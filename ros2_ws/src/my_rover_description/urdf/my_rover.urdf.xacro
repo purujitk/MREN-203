@@ -79,7 +79,7 @@
   <xacro:wheel name="right" x_pos="0" y_pos="${-wheel_separation/2}"/>
 
   <!-- ========== LIDAR LINK (RPLidar) ========== -->
-  <link name="lidar_link">
+  <link name="scan">
     <visual>
       <geometry>
         <cylinder radius="0.04" length="0.04"/>
@@ -102,7 +102,7 @@
 
   <joint name="lidar_joint" type="fixed">
     <parent link="base_link"/>
-    <child  link="lidar_link"/>
+    <child  link="scan"/>
     <!-- Mount on top-center of base -->
     <origin xyz="0 0 ${base_height/2 + 0.02}" rpy="0 0 0"/>
   </joint>
