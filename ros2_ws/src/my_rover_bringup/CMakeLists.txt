@@ -26,11 +26,10 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
-add_executable(ar_sr_br src/ar_sr_br.py)
-ament_target_dependencies(ar_sr_br)
-install(TARGETS
-  ar_sr_br
-  DESTINATION lib/${PROJECT_NAME})
+install(PROGRAMS
+  src/ar_sr_br.py
+  DESTINATION lib/${PROJECT_NAME}
+  RENAME ar_sr_br)
 
 install(DIRECTORY launch config maps
   DESTINATION share/${PROJECT_NAME}

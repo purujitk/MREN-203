@@ -6,7 +6,8 @@
 			"_install",
 			"install",
 			"include",
-			"find_package"
+			"find_package",
+			"ament_cmake_symlink_install_programs"
 		],
 		"files" : 
 		[
@@ -15,7 +16,8 @@
 			"/opt/ros/humble/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake",
 			"/opt/ros/humble/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake",
 			"/opt/ros/humble/share/ament_cmake/cmake/ament_cmakeConfig.cmake",
-			"CMakeLists.txt"
+			"CMakeLists.txt",
+			"/opt/ros/humble/share/ament_cmake_core/cmake/symlink_install/ament_cmake_symlink_install_programs.cmake"
 		],
 		"nodes" : 
 		[
@@ -73,6 +75,24 @@
 				"file" : 0,
 				"line" : 43,
 				"parent" : 9
+			},
+			{
+				"command" : 1,
+				"file" : 5,
+				"line" : 29,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 34,
+				"parent" : 11
+			},
+			{
+				"command" : 0,
+				"file" : 6,
+				"line" : 39,
+				"parent" : 12
 			}
 		]
 	},
@@ -83,6 +103,19 @@
 			"component" : "Unspecified",
 			"scriptFile" : "/home/purujitk/203/MREN-203/ros2_ws/build/my_rover_bringup/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake",
 			"type" : "script"
+		},
+		{
+			"backtrace" : 13,
+			"component" : "Unspecified",
+			"destination" : "lib/my_rover_bringup",
+			"paths" : 
+			[
+				{
+					"from" : "src/ar_sr_br.py",
+					"to" : "ar_sr_br"
+				}
+			],
+			"type" : "file"
 		}
 	],
 	"paths" : 
