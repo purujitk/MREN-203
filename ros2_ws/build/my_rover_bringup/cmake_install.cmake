@@ -46,6 +46,10 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   include("/home/purujitk/203/MREN-203/ros2_ws/build/my_rover_bringup/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
 endif()
 
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/my_rover_bringup" TYPE PROGRAM RENAME "ar_sr_br" FILES "/home/purujitk/203/MREN-203/ros2_ws/src/my_rover_bringup/src/ar_sr_br.py")
+endif()
+
 if(CMAKE_INSTALL_COMPONENT)
   set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")
 else()

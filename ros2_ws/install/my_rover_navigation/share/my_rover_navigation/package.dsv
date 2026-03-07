@@ -1,6 +1,6 @@
 source;share/my_rover_navigation/hook/pythonpath.ps1
 source;share/my_rover_navigation/hook/pythonpath.dsv
 source;share/my_rover_navigation/hook/pythonpath.sh
-source;../../build/my_rover_navigation/share/my_rover_navigation/hook/pythonpath_develop.ps1
-source;../../build/my_rover_navigation/share/my_rover_navigation/hook/pythonpath_develop.dsv
-source;../../build/my_rover_navigation/share/my_rover_navigation/hook/pythonpath_develop.sh
+source;share/my_rover_navigation/hook/ament_prefix_path.ps1
+source;share/my_rover_navigation/hook/ament_prefix_path.dsv
+source;share/my_rover_navigation/hook/ament_prefix_path.sh
