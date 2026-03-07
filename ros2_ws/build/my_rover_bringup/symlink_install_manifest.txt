@@ -1,3 +1,6 @@
+/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_bringup/share/my_rover_bringup/launch/lidar.launch.py
+/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_bringup/share/my_rover_bringup/launch/robot_state_publisher.launch.py
+/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_bringup/share/my_rover_bringup/config/my_rover.yaml
 /home/purujitk/203/MREN-203/ros2_ws/install/my_rover_bringup/share/ament_index/resource_index/package_run_dependencies/my_rover_bringup
 /home/purujitk/203/MREN-203/ros2_ws/install/my_rover_bringup/share/ament_index/resource_index/parent_prefix_path/my_rover_bringup
 /home/purujitk/203/MREN-203/ros2_ws/install/my_rover_bringup/share/my_rover_bringup/environment/ament_prefix_path.sh

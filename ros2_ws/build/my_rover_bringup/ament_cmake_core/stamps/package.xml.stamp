@@ -7,6 +7,22 @@
   <maintainer email="purujitkantiya@gmail.com">purujitk</maintainer>
   <license>TODO: License declaration</license>
 
+
+  <!-- Nav2 dependencies -->
+  <depend>nav2_bringup</depend>
+  <depend>nav2_core</depend>
+
+  <!-- SLAM dependencies -->
+  <depend>slam_toolbox</depend>
+  
+  <!-- LIDAR dependenices -->
+  <depend>rplidar_ros</depend>
+
+  <!-- Other dependencies -->
+  <depend>robot_state_publisher</depend>
+  <depend>tf2_ros</depend>
+  <depend>xacro</depend>
+
   <buildtool_depend>ament_cmake</buildtool_depend>
 
   <test_depend>ament_lint_auto</test_depend>

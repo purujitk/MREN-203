@@ -1,0 +1,342 @@
+[0.069s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.070s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x77ec1071b640>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x77ec1071b0d0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x77ec1071b0d0>>, mixin_verb=('build',))
+[0.177s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.177s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.177s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.177s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.177s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.177s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.177s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/purujitk/203/MREN-203/ros2_ws'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino_Serial_Bridge) by extensions ['ignore', 'ignore_ament_install']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino_Serial_Bridge) by extension 'ignore'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino_Serial_Bridge) by extension 'ignore_ament_install'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino_Serial_Bridge) by extensions ['colcon_pkg']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino_Serial_Bridge) by extension 'colcon_pkg'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino_Serial_Bridge) by extensions ['colcon_meta']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino_Serial_Bridge) by extension 'colcon_meta'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino_Serial_Bridge) by extensions ['ros']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino_Serial_Bridge) by extension 'ros'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino_Serial_Bridge) by extensions ['cmake', 'python']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino_Serial_Bridge) by extension 'cmake'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino_Serial_Bridge) by extension 'python'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino_Serial_Bridge) by extensions ['python_setup_py']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino_Serial_Bridge) by extension 'python_setup_py'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_rover_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_rover_bringup) by extension 'ignore'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_rover_bringup) by extension 'ignore_ament_install'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_rover_bringup) by extensions ['colcon_pkg']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_rover_bringup) by extension 'colcon_pkg'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_rover_bringup) by extensions ['colcon_meta']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_rover_bringup) by extension 'colcon_meta'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_rover_bringup) by extensions ['ros']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_rover_bringup) by extension 'ros'
+[0.205s] DEBUG:colcon.colcon_core.package_identification:Package 'src/my_rover_bringup' with type 'ros.ament_cmake' and name 'my_rover_bringup'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_rover_description) by extensions ['ignore', 'ignore_ament_install']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_rover_description) by extension 'ignore'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_rover_description) by extension 'ignore_ament_install'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_rover_description) by extensions ['colcon_pkg']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_rover_description) by extension 'colcon_pkg'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_rover_description) by extensions ['colcon_meta']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_rover_description) by extension 'colcon_meta'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_rover_description) by extensions ['ros']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_rover_description) by extension 'ros'
+[0.206s] DEBUG:colcon.colcon_core.package_identification:Package 'src/my_rover_description' with type 'ros.ament_cmake' and name 'my_rover_description'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_rover_navigation) by extensions ['ignore', 'ignore_ament_install']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_rover_navigation) by extension 'ignore'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_rover_navigation) by extension 'ignore_ament_install'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_rover_navigation) by extensions ['colcon_pkg']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_rover_navigation) by extension 'colcon_pkg'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_rover_navigation) by extensions ['colcon_meta']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_rover_navigation) by extension 'colcon_meta'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_rover_navigation) by extensions ['ros']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_rover_navigation) by extension 'ros'
+[0.206s] DEBUG:colcon.colcon_core.package_identification:Failed to parse potential ROS package manifest in'src/my_rover_navigation': Error(s) in package 'src/my_rover_navigation/package.xml':
+The manifest contains invalid XML:
+mismatched tag: line 17, column 28
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_rover_navigation) by extensions ['cmake', 'python']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_rover_navigation) by extension 'cmake'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_rover_navigation) by extension 'python'
+[0.206s] DEBUG:colcon.colcon_core.package_identification:Python package in 'src/my_rover_navigation' passes arguments to the setup() function which requires a different identification extension than 'python'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_rover_navigation) by extensions ['python_setup_py']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_rover_navigation) by extension 'python_setup_py'
+[0.362s] DEBUG:colcon.colcon_core.package_identification:Package 'src/my_rover_navigation' with type 'python' and name 'my_rover_navigation'
+[0.362s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extensions ['ignore', 'ignore_ament_install']
+[0.362s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extension 'ignore'
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extension 'ignore_ament_install'
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extensions ['colcon_pkg']
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extension 'colcon_pkg'
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extensions ['colcon_meta']
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extension 'colcon_meta'
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extensions ['ros']
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extension 'ros'
+[0.363s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rplidar_ros' with type 'ros.ament_cmake' and name 'rplidar_ros'
+[0.363s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.363s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.363s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.363s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.363s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.377s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.377s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.379s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 440 installed packages in /opt/ros/humble
+[0.380s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.410s] Level 5:colcon.colcon_core.verb:set package 'my_rover_description' build argument 'cmake_args' from command line to 'None'
+[0.410s] Level 5:colcon.colcon_core.verb:set package 'my_rover_description' build argument 'cmake_target' from command line to 'None'
+[0.410s] Level 5:colcon.colcon_core.verb:set package 'my_rover_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.410s] Level 5:colcon.colcon_core.verb:set package 'my_rover_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.410s] Level 5:colcon.colcon_core.verb:set package 'my_rover_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.410s] Level 5:colcon.colcon_core.verb:set package 'my_rover_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.410s] Level 5:colcon.colcon_core.verb:set package 'my_rover_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.410s] Level 5:colcon.colcon_core.verb:set package 'my_rover_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.410s] Level 5:colcon.colcon_core.verb:set package 'my_rover_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.410s] DEBUG:colcon.colcon_core.verb:Building package 'my_rover_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/purujitk/203/MREN-203/ros2_ws/build/my_rover_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_description', 'merge_install': False, 'path': '/home/purujitk/203/MREN-203/ros2_ws/src/my_rover_description', 'symlink_install': True, 'test_result_base': None}
+[0.410s] Level 5:colcon.colcon_core.verb:set package 'my_rover_navigation' build argument 'cmake_args' from command line to 'None'
+[0.410s] Level 5:colcon.colcon_core.verb:set package 'my_rover_navigation' build argument 'cmake_target' from command line to 'None'
+[0.410s] Level 5:colcon.colcon_core.verb:set package 'my_rover_navigation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.410s] Level 5:colcon.colcon_core.verb:set package 'my_rover_navigation' build argument 'cmake_clean_cache' from command line to 'False'
+[0.410s] Level 5:colcon.colcon_core.verb:set package 'my_rover_navigation' build argument 'cmake_clean_first' from command line to 'False'
+[0.410s] Level 5:colcon.colcon_core.verb:set package 'my_rover_navigation' build argument 'cmake_force_configure' from command line to 'False'
+[0.410s] Level 5:colcon.colcon_core.verb:set package 'my_rover_navigation' build argument 'ament_cmake_args' from command line to 'None'
+[0.410s] Level 5:colcon.colcon_core.verb:set package 'my_rover_navigation' build argument 'catkin_cmake_args' from command line to 'None'
+[0.410s] Level 5:colcon.colcon_core.verb:set package 'my_rover_navigation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.410s] DEBUG:colcon.colcon_core.verb:Building package 'my_rover_navigation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/purujitk/203/MREN-203/ros2_ws/build/my_rover_navigation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_navigation', 'merge_install': False, 'path': '/home/purujitk/203/MREN-203/ros2_ws/src/my_rover_navigation', 'symlink_install': True, 'test_result_base': None}
+[0.410s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_args' from command line to 'None'
+[0.410s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_target' from command line to 'None'
+[0.410s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.410s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_clean_cache' from command line to 'False'
+[0.410s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_clean_first' from command line to 'False'
+[0.410s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_force_configure' from command line to 'False'
+[0.410s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'ament_cmake_args' from command line to 'None'
+[0.410s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'catkin_cmake_args' from command line to 'None'
+[0.410s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.410s] DEBUG:colcon.colcon_core.verb:Building package 'rplidar_ros' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/purujitk/203/MREN-203/ros2_ws/build/rplidar_ros', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/purujitk/203/MREN-203/ros2_ws/install/rplidar_ros', 'merge_install': False, 'path': '/home/purujitk/203/MREN-203/ros2_ws/src/rplidar_ros', 'symlink_install': True, 'test_result_base': None}
+[0.411s] Level 5:colcon.colcon_core.verb:set package 'my_rover_bringup' build argument 'cmake_args' from command line to 'None'
+[0.411s] Level 5:colcon.colcon_core.verb:set package 'my_rover_bringup' build argument 'cmake_target' from command line to 'None'
+[0.411s] Level 5:colcon.colcon_core.verb:set package 'my_rover_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.411s] Level 5:colcon.colcon_core.verb:set package 'my_rover_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.411s] Level 5:colcon.colcon_core.verb:set package 'my_rover_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.411s] Level 5:colcon.colcon_core.verb:set package 'my_rover_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.411s] Level 5:colcon.colcon_core.verb:set package 'my_rover_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.411s] Level 5:colcon.colcon_core.verb:set package 'my_rover_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.411s] Level 5:colcon.colcon_core.verb:set package 'my_rover_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.411s] DEBUG:colcon.colcon_core.verb:Building package 'my_rover_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/purujitk/203/MREN-203/ros2_ws/build/my_rover_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_bringup', 'merge_install': False, 'path': '/home/purujitk/203/MREN-203/ros2_ws/src/my_rover_bringup', 'symlink_install': True, 'test_result_base': None}
+[0.411s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.412s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.412s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/purujitk/203/MREN-203/ros2_ws/src/rplidar_ros' with build type 'ament_cmake'
+[0.412s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/purujitk/203/MREN-203/ros2_ws/src/rplidar_ros'
+[0.413s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.413s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.413s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.416s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/purujitk/203/MREN-203/ros2_ws/src/my_rover_description' with build type 'ament_cmake'
+[0.416s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/purujitk/203/MREN-203/ros2_ws/src/my_rover_description'
+[0.416s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.416s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.418s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/purujitk/203/MREN-203/ros2_ws/src/my_rover_navigation'
+[0.418s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.418s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.422s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/purujitk/203/MREN-203/ros2_ws/build/rplidar_ros': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/purujitk/203/MREN-203/ros2_ws/src/rplidar_ros -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/purujitk/203/MREN-203/ros2_ws/install/rplidar_ros
+[0.425s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/purujitk/203/MREN-203/ros2_ws/build/my_rover_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/purujitk/203/MREN-203/ros2_ws/src/my_rover_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_description
+[0.614s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/purujitk/203/MREN-203/ros2_ws/build/my_rover_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/purujitk/203/MREN-203/ros2_ws/src/my_rover_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_description
+[0.615s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/purujitk/203/MREN-203/ros2_ws/build/my_rover_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/purujitk/203/MREN-203/ros2_ws/build/my_rover_description -- -j16 -l16
+[0.647s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/purujitk/203/MREN-203/ros2_ws/build/my_rover_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/purujitk/203/MREN-203/ros2_ws/build/my_rover_description -- -j16 -l16
+[0.658s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/purujitk/203/MREN-203/ros2_ws/build/my_rover_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/purujitk/203/MREN-203/ros2_ws/build/my_rover_description
+[0.674s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_rover_description)
+[0.674s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/purujitk/203/MREN-203/ros2_ws/build/my_rover_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/purujitk/203/MREN-203/ros2_ws/build/my_rover_description
+[0.677s] Level 1:colcon.colcon_core.environment:checking '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_description' for CMake module files
+[0.677s] Level 1:colcon.colcon_core.environment:checking '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_description' for CMake config files
+[0.678s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_rover_description', 'cmake_prefix_path')
+[0.678s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_description/share/my_rover_description/hook/cmake_prefix_path.ps1'
+[0.679s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_description/share/my_rover_description/hook/cmake_prefix_path.dsv'
+[0.679s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_description/share/my_rover_description/hook/cmake_prefix_path.sh'
+[0.680s] Level 1:colcon.colcon_core.environment:checking '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_description/bin'
+[0.680s] Level 1:colcon.colcon_core.environment:checking '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_description/lib/pkgconfig/my_rover_description.pc'
+[0.680s] Level 1:colcon.colcon_core.environment:checking '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_description/lib/python3.10/site-packages'
+[0.680s] Level 1:colcon.colcon_core.environment:checking '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_description/bin'
+[0.680s] INFO:colcon.colcon_core.shell:Creating package script '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_description/share/my_rover_description/package.ps1'
+[0.681s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_description/share/my_rover_description/package.dsv'
+[0.681s] INFO:colcon.colcon_core.shell:Creating package script '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_description/share/my_rover_description/package.sh'
+[0.682s] INFO:colcon.colcon_core.shell:Creating package script '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_description/share/my_rover_description/package.bash'
+[0.682s] INFO:colcon.colcon_core.shell:Creating package script '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_description/share/my_rover_description/package.zsh'
+[0.682s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_description/share/colcon-core/packages/my_rover_description)
+[0.683s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_rover_description)
+[0.683s] Level 1:colcon.colcon_core.environment:checking '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_description' for CMake module files
+[0.683s] Level 1:colcon.colcon_core.environment:checking '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_description' for CMake config files
+[0.683s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_rover_description', 'cmake_prefix_path')
+[0.684s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_description/share/my_rover_description/hook/cmake_prefix_path.ps1'
+[0.684s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_description/share/my_rover_description/hook/cmake_prefix_path.dsv'
+[0.684s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_description/share/my_rover_description/hook/cmake_prefix_path.sh'
+[0.684s] Level 1:colcon.colcon_core.environment:checking '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_description/bin'
+[0.684s] Level 1:colcon.colcon_core.environment:checking '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_description/lib/pkgconfig/my_rover_description.pc'
+[0.684s] Level 1:colcon.colcon_core.environment:checking '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_description/lib/python3.10/site-packages'
+[0.685s] Level 1:colcon.colcon_core.environment:checking '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_description/bin'
+[0.685s] INFO:colcon.colcon_core.shell:Creating package script '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_description/share/my_rover_description/package.ps1'
+[0.685s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_description/share/my_rover_description/package.dsv'
+[0.685s] INFO:colcon.colcon_core.shell:Creating package script '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_description/share/my_rover_description/package.sh'
+[0.686s] INFO:colcon.colcon_core.shell:Creating package script '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_description/share/my_rover_description/package.bash'
+[0.686s] INFO:colcon.colcon_core.shell:Creating package script '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_description/share/my_rover_description/package.zsh'
+[0.686s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_description/share/colcon-core/packages/my_rover_description)
+[0.817s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/purujitk/203/MREN-203/ros2_ws/install/my_rover_navigation/share/ament_index/resource_index/packages/my_rover_navigation
+[0.817s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/purujitk/203/MREN-203/ros2_ws/install/my_rover_navigation/share/my_rover_navigation/package.xml
+[0.819s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/purujitk/203/MREN-203/ros2_ws/build/my_rover_navigation': PYTHONPATH=/home/purujitk/203/MREN-203/ros2_ws/build/my_rover_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/purujitk/203/MREN-203/ros2_ws/build/my_rover_navigation/build --no-deps symlink_data --force
+[1.096s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_rover_navigation', 'pythonpath_develop')
+[1.096s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/purujitk/203/MREN-203/ros2_ws/build/my_rover_navigation/share/my_rover_navigation/hook/pythonpath_develop.ps1'
+[1.096s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/purujitk/203/MREN-203/ros2_ws/build/my_rover_navigation' returned '0': PYTHONPATH=/home/purujitk/203/MREN-203/ros2_ws/build/my_rover_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/purujitk/203/MREN-203/ros2_ws/build/my_rover_navigation/build --no-deps symlink_data --force
+[1.097s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/purujitk/203/MREN-203/ros2_ws/build/my_rover_navigation/share/my_rover_navigation/hook/pythonpath_develop.dsv'
+[1.097s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/purujitk/203/MREN-203/ros2_ws/build/my_rover_navigation/share/my_rover_navigation/hook/pythonpath_develop.sh'
+[1.098s] Level 1:colcon.colcon_core.environment:checking '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_navigation' for CMake module files
+[1.098s] Level 1:colcon.colcon_core.environment:checking '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_navigation' for CMake config files
+[1.099s] Level 1:colcon.colcon_core.environment:checking '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_navigation/lib'
+[1.099s] Level 1:colcon.colcon_core.environment:checking '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_navigation/bin'
+[1.099s] Level 1:colcon.colcon_core.environment:checking '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_navigation/lib/pkgconfig/my_rover_navigation.pc'
+[1.099s] Level 1:colcon.colcon_core.environment:checking '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_navigation/lib/python3.10/site-packages'
+[1.100s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_rover_navigation', 'pythonpath')
+[1.100s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_navigation/share/my_rover_navigation/hook/pythonpath.ps1'
+[1.100s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_navigation/share/my_rover_navigation/hook/pythonpath.dsv'
+[1.101s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_navigation/share/my_rover_navigation/hook/pythonpath.sh'
+[1.101s] Level 1:colcon.colcon_core.environment:checking '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_navigation/bin'
+[1.101s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_rover_navigation)
+[1.102s] INFO:colcon.colcon_core.shell:Creating package script '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_navigation/share/my_rover_navigation/package.ps1'
+[1.102s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_navigation/share/my_rover_navigation/package.dsv'
+[1.103s] INFO:colcon.colcon_core.shell:Creating package script '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_navigation/share/my_rover_navigation/package.sh'
+[1.103s] INFO:colcon.colcon_core.shell:Creating package script '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_navigation/share/my_rover_navigation/package.bash'
+[1.104s] INFO:colcon.colcon_core.shell:Creating package script '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_navigation/share/my_rover_navigation/package.zsh'
+[1.104s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_navigation/share/colcon-core/packages/my_rover_navigation)
+[1.545s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/purujitk/203/MREN-203/ros2_ws/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/purujitk/203/MREN-203/ros2_ws/src/rplidar_ros -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/purujitk/203/MREN-203/ros2_ws/install/rplidar_ros
+[1.547s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/purujitk/203/MREN-203/ros2_ws/build/rplidar_ros': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/purujitk/203/MREN-203/ros2_ws/build/rplidar_ros -- -j16 -l16
+[8.494s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/purujitk/203/MREN-203/ros2_ws/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/purujitk/203/MREN-203/ros2_ws/build/rplidar_ros -- -j16 -l16
+[8.496s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/purujitk/203/MREN-203/ros2_ws/build/rplidar_ros': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/purujitk/203/MREN-203/ros2_ws/build/rplidar_ros
+[8.948s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rplidar_ros)
+[8.948s] Level 1:colcon.colcon_core.environment:checking '/home/purujitk/203/MREN-203/ros2_ws/install/rplidar_ros' for CMake module files
+[8.949s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/purujitk/203/MREN-203/ros2_ws/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/purujitk/203/MREN-203/ros2_ws/build/rplidar_ros
+[8.950s] Level 1:colcon.colcon_core.environment:checking '/home/purujitk/203/MREN-203/ros2_ws/install/rplidar_ros' for CMake config files
+[8.950s] Level 1:colcon.colcon_core.shell:create_environment_hook('rplidar_ros', 'cmake_prefix_path')
+[8.950s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/purujitk/203/MREN-203/ros2_ws/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.ps1'
+[8.951s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/purujitk/203/MREN-203/ros2_ws/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.dsv'
+[8.951s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/purujitk/203/MREN-203/ros2_ws/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.sh'
+[8.952s] Level 1:colcon.colcon_core.environment:checking '/home/purujitk/203/MREN-203/ros2_ws/install/rplidar_ros/lib'
+[8.952s] Level 1:colcon.colcon_core.environment:checking '/home/purujitk/203/MREN-203/ros2_ws/install/rplidar_ros/bin'
+[8.952s] Level 1:colcon.colcon_core.environment:checking '/home/purujitk/203/MREN-203/ros2_ws/install/rplidar_ros/lib/pkgconfig/rplidar_ros.pc'
+[8.952s] Level 1:colcon.colcon_core.environment:checking '/home/purujitk/203/MREN-203/ros2_ws/install/rplidar_ros/lib/python3.10/site-packages'
+[8.953s] Level 1:colcon.colcon_core.environment:checking '/home/purujitk/203/MREN-203/ros2_ws/install/rplidar_ros/bin'
+[8.953s] INFO:colcon.colcon_core.shell:Creating package script '/home/purujitk/203/MREN-203/ros2_ws/install/rplidar_ros/share/rplidar_ros/package.ps1'
+[8.953s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/purujitk/203/MREN-203/ros2_ws/install/rplidar_ros/share/rplidar_ros/package.dsv'
+[8.954s] INFO:colcon.colcon_core.shell:Creating package script '/home/purujitk/203/MREN-203/ros2_ws/install/rplidar_ros/share/rplidar_ros/package.sh'
+[8.954s] INFO:colcon.colcon_core.shell:Creating package script '/home/purujitk/203/MREN-203/ros2_ws/install/rplidar_ros/share/rplidar_ros/package.bash'
+[8.955s] INFO:colcon.colcon_core.shell:Creating package script '/home/purujitk/203/MREN-203/ros2_ws/install/rplidar_ros/share/rplidar_ros/package.zsh'
+[8.955s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/purujitk/203/MREN-203/ros2_ws/install/rplidar_ros/share/colcon-core/packages/rplidar_ros)
+[8.955s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rplidar_ros)
+[8.955s] Level 1:colcon.colcon_core.environment:checking '/home/purujitk/203/MREN-203/ros2_ws/install/rplidar_ros' for CMake module files
+[8.956s] Level 1:colcon.colcon_core.environment:checking '/home/purujitk/203/MREN-203/ros2_ws/install/rplidar_ros' for CMake config files
+[8.956s] Level 1:colcon.colcon_core.shell:create_environment_hook('rplidar_ros', 'cmake_prefix_path')
+[8.956s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/purujitk/203/MREN-203/ros2_ws/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.ps1'
+[8.956s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/purujitk/203/MREN-203/ros2_ws/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.dsv'
+[8.957s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/purujitk/203/MREN-203/ros2_ws/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.sh'
+[8.957s] Level 1:colcon.colcon_core.environment:checking '/home/purujitk/203/MREN-203/ros2_ws/install/rplidar_ros/lib'
+[8.957s] Level 1:colcon.colcon_core.environment:checking '/home/purujitk/203/MREN-203/ros2_ws/install/rplidar_ros/bin'
+[8.957s] Level 1:colcon.colcon_core.environment:checking '/home/purujitk/203/MREN-203/ros2_ws/install/rplidar_ros/lib/pkgconfig/rplidar_ros.pc'
+[8.957s] Level 1:colcon.colcon_core.environment:checking '/home/purujitk/203/MREN-203/ros2_ws/install/rplidar_ros/lib/python3.10/site-packages'
+[8.958s] Level 1:colcon.colcon_core.environment:checking '/home/purujitk/203/MREN-203/ros2_ws/install/rplidar_ros/bin'
+[8.958s] INFO:colcon.colcon_core.shell:Creating package script '/home/purujitk/203/MREN-203/ros2_ws/install/rplidar_ros/share/rplidar_ros/package.ps1'
+[8.958s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/purujitk/203/MREN-203/ros2_ws/install/rplidar_ros/share/rplidar_ros/package.dsv'
+[8.958s] INFO:colcon.colcon_core.shell:Creating package script '/home/purujitk/203/MREN-203/ros2_ws/install/rplidar_ros/share/rplidar_ros/package.sh'
+[8.959s] INFO:colcon.colcon_core.shell:Creating package script '/home/purujitk/203/MREN-203/ros2_ws/install/rplidar_ros/share/rplidar_ros/package.bash'
+[8.959s] INFO:colcon.colcon_core.shell:Creating package script '/home/purujitk/203/MREN-203/ros2_ws/install/rplidar_ros/share/rplidar_ros/package.zsh'
+[8.959s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/purujitk/203/MREN-203/ros2_ws/install/rplidar_ros/share/colcon-core/packages/rplidar_ros)
+[8.959s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/purujitk/203/MREN-203/ros2_ws/src/my_rover_bringup' with build type 'ament_cmake'
+[8.959s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/purujitk/203/MREN-203/ros2_ws/src/my_rover_bringup'
+[8.960s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[8.960s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[8.993s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/purujitk/203/MREN-203/ros2_ws/build/my_rover_bringup': AMENT_PREFIX_PATH=/home/purujitk/203/MREN-203/ros2_ws/install/rplidar_ros:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/purujitk/203/MREN-203/ros2_ws/install/rplidar_ros:/opt/ros/humble /usr/bin/cmake /home/purujitk/203/MREN-203/ros2_ws/src/my_rover_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_bringup
+[9.175s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/purujitk/203/MREN-203/ros2_ws/build/my_rover_bringup' returned '0': AMENT_PREFIX_PATH=/home/purujitk/203/MREN-203/ros2_ws/install/rplidar_ros:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/purujitk/203/MREN-203/ros2_ws/install/rplidar_ros:/opt/ros/humble /usr/bin/cmake /home/purujitk/203/MREN-203/ros2_ws/src/my_rover_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_bringup
+[9.177s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/purujitk/203/MREN-203/ros2_ws/build/my_rover_bringup': AMENT_PREFIX_PATH=/home/purujitk/203/MREN-203/ros2_ws/install/rplidar_ros:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/purujitk/203/MREN-203/ros2_ws/install/rplidar_ros:/opt/ros/humble /usr/bin/cmake --build /home/purujitk/203/MREN-203/ros2_ws/build/my_rover_bringup -- -j16 -l16
+[9.224s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/purujitk/203/MREN-203/ros2_ws/build/my_rover_bringup' returned '0': AMENT_PREFIX_PATH=/home/purujitk/203/MREN-203/ros2_ws/install/rplidar_ros:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/purujitk/203/MREN-203/ros2_ws/install/rplidar_ros:/opt/ros/humble /usr/bin/cmake --build /home/purujitk/203/MREN-203/ros2_ws/build/my_rover_bringup -- -j16 -l16
+[9.226s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/purujitk/203/MREN-203/ros2_ws/build/my_rover_bringup': AMENT_PREFIX_PATH=/home/purujitk/203/MREN-203/ros2_ws/install/rplidar_ros:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/purujitk/203/MREN-203/ros2_ws/install/rplidar_ros:/opt/ros/humble /usr/bin/cmake --install /home/purujitk/203/MREN-203/ros2_ws/build/my_rover_bringup
+[9.250s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_rover_bringup)
+[9.250s] Level 1:colcon.colcon_core.environment:checking '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_bringup' for CMake module files
+[9.251s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/purujitk/203/MREN-203/ros2_ws/build/my_rover_bringup' returned '0': AMENT_PREFIX_PATH=/home/purujitk/203/MREN-203/ros2_ws/install/rplidar_ros:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/purujitk/203/MREN-203/ros2_ws/install/rplidar_ros:/opt/ros/humble /usr/bin/cmake --install /home/purujitk/203/MREN-203/ros2_ws/build/my_rover_bringup
+[9.252s] Level 1:colcon.colcon_core.environment:checking '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_bringup' for CMake config files
+[9.252s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_rover_bringup', 'cmake_prefix_path')
+[9.252s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_bringup/share/my_rover_bringup/hook/cmake_prefix_path.ps1'
+[9.253s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_bringup/share/my_rover_bringup/hook/cmake_prefix_path.dsv'
+[9.253s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_bringup/share/my_rover_bringup/hook/cmake_prefix_path.sh'
+[9.254s] Level 1:colcon.colcon_core.environment:checking '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_bringup/bin'
+[9.254s] Level 1:colcon.colcon_core.environment:checking '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_bringup/lib/pkgconfig/my_rover_bringup.pc'
+[9.254s] Level 1:colcon.colcon_core.environment:checking '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_bringup/lib/python3.10/site-packages'
+[9.255s] Level 1:colcon.colcon_core.environment:checking '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_bringup/bin'
+[9.255s] INFO:colcon.colcon_core.shell:Creating package script '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_bringup/share/my_rover_bringup/package.ps1'
+[9.256s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_bringup/share/my_rover_bringup/package.dsv'
+[9.256s] INFO:colcon.colcon_core.shell:Creating package script '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_bringup/share/my_rover_bringup/package.sh'
+[9.257s] INFO:colcon.colcon_core.shell:Creating package script '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_bringup/share/my_rover_bringup/package.bash'
+[9.257s] INFO:colcon.colcon_core.shell:Creating package script '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_bringup/share/my_rover_bringup/package.zsh'
+[9.257s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_bringup/share/colcon-core/packages/my_rover_bringup)
+[9.258s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_rover_bringup)
+[9.258s] Level 1:colcon.colcon_core.environment:checking '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_bringup' for CMake module files
+[9.259s] Level 1:colcon.colcon_core.environment:checking '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_bringup' for CMake config files
+[9.259s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_rover_bringup', 'cmake_prefix_path')
+[9.259s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_bringup/share/my_rover_bringup/hook/cmake_prefix_path.ps1'
+[9.260s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_bringup/share/my_rover_bringup/hook/cmake_prefix_path.dsv'
+[9.260s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_bringup/share/my_rover_bringup/hook/cmake_prefix_path.sh'
+[9.261s] Level 1:colcon.colcon_core.environment:checking '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_bringup/bin'
+[9.261s] Level 1:colcon.colcon_core.environment:checking '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_bringup/lib/pkgconfig/my_rover_bringup.pc'
+[9.261s] Level 1:colcon.colcon_core.environment:checking '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_bringup/lib/python3.10/site-packages'
+[9.261s] Level 1:colcon.colcon_core.environment:checking '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_bringup/bin'
+[9.262s] INFO:colcon.colcon_core.shell:Creating package script '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_bringup/share/my_rover_bringup/package.ps1'
+[9.262s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_bringup/share/my_rover_bringup/package.dsv'
+[9.263s] INFO:colcon.colcon_core.shell:Creating package script '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_bringup/share/my_rover_bringup/package.sh'
+[9.263s] INFO:colcon.colcon_core.shell:Creating package script '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_bringup/share/my_rover_bringup/package.bash'
+[9.264s] INFO:colcon.colcon_core.shell:Creating package script '/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_bringup/share/my_rover_bringup/package.zsh'
+[9.264s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_bringup/share/colcon-core/packages/my_rover_bringup)
+[9.264s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[9.265s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[9.265s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[9.265s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[9.271s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[9.271s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[9.271s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[9.282s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[9.282s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/purujitk/203/MREN-203/ros2_ws/install/local_setup.ps1'
+[9.283s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/purujitk/203/MREN-203/ros2_ws/install/_local_setup_util_ps1.py'
+[9.285s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/purujitk/203/MREN-203/ros2_ws/install/setup.ps1'
+[9.287s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/purujitk/203/MREN-203/ros2_ws/install/local_setup.sh'
+[9.287s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/purujitk/203/MREN-203/ros2_ws/install/_local_setup_util_sh.py'
+[9.288s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/purujitk/203/MREN-203/ros2_ws/install/setup.sh'
+[9.289s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/purujitk/203/MREN-203/ros2_ws/install/local_setup.bash'
+[9.290s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/purujitk/203/MREN-203/ros2_ws/install/setup.bash'
+[9.290s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/purujitk/203/MREN-203/ros2_ws/install/local_setup.zsh'
+[9.291s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/purujitk/203/MREN-203/ros2_ws/install/setup.zsh'
