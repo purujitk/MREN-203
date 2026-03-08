@@ -1,0 +1,16 @@
+[0.448s] Invoking command in '/home/purujitk/203/MREN-203/ros2_ws/build/my_rover_navigation': PYTHONPATH=/home/purujitk/203/MREN-203/ros2_ws/build/my_rover_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/purujitk/203/MREN-203/ros2_ws/build/my_rover_navigation/build --no-deps symlink_data
+[0.618s] running develop
+[0.715s] running egg_info
+[0.715s] writing my_rover_navigation.egg-info/PKG-INFO
+[0.715s] writing dependency_links to my_rover_navigation.egg-info/dependency_links.txt
+[0.715s] writing entry points to my_rover_navigation.egg-info/entry_points.txt
+[0.715s] writing requirements to my_rover_navigation.egg-info/requires.txt
+[0.715s] writing top-level names to my_rover_navigation.egg-info/top_level.txt
+[0.716s] reading manifest file 'my_rover_navigation.egg-info/SOURCES.txt'
+[0.716s] writing manifest file 'my_rover_navigation.egg-info/SOURCES.txt'
+[0.717s] running build_ext
+[0.717s] Creating /home/purujitk/203/MREN-203/ros2_ws/install/my_rover_navigation/lib/python3.10/site-packages/my-rover-navigation.egg-link (link to .)
+[0.718s] 
+[0.718s] Installed /home/purujitk/203/MREN-203/ros2_ws/build/my_rover_navigation
+[0.718s] running symlink_data
+[0.739s] Invoked command in '/home/purujitk/203/MREN-203/ros2_ws/build/my_rover_navigation' returned '0': PYTHONPATH=/home/purujitk/203/MREN-203/ros2_ws/build/my_rover_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/purujitk/203/MREN-203/ros2_ws/build/my_rover_navigation/build --no-deps symlink_data

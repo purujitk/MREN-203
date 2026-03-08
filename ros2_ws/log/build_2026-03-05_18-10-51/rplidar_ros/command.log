@@ -1,0 +1,4 @@
+Invoking command in '/home/purujitk/203/MREN-203/ros2_ws/build/rplidar_ros': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/purujitk/203/MREN-203/ros2_ws/build/rplidar_ros -- -j16 -l16
+Invoked command in '/home/purujitk/203/MREN-203/ros2_ws/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/purujitk/203/MREN-203/ros2_ws/build/rplidar_ros -- -j16 -l16
+Invoking command in '/home/purujitk/203/MREN-203/ros2_ws/build/rplidar_ros': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/purujitk/203/MREN-203/ros2_ws/build/rplidar_ros
+Invoked command in '/home/purujitk/203/MREN-203/ros2_ws/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/purujitk/203/MREN-203/ros2_ws/build/rplidar_ros

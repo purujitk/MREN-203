@@ -1,0 +1,15 @@
+package.xml
+setup.cfg
+setup.py
+../../build/my_rover_navigation/my_rover_navigation.egg-info/PKG-INFO
+../../build/my_rover_navigation/my_rover_navigation.egg-info/SOURCES.txt
+../../build/my_rover_navigation/my_rover_navigation.egg-info/dependency_links.txt
+../../build/my_rover_navigation/my_rover_navigation.egg-info/entry_points.txt
+../../build/my_rover_navigation/my_rover_navigation.egg-info/requires.txt
+../../build/my_rover_navigation/my_rover_navigation.egg-info/top_level.txt
+../../build/my_rover_navigation/my_rover_navigation.egg-info/zip-safe
+my_rover_navigation/__init__.py
+resource/my_rover_navigation
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py
