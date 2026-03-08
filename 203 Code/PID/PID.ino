@@ -32,7 +32,8 @@ int I1 = 2;
 int I2 = 4;
 
 //desired values
-double v_d = 1;
+double v_l = 0;
+double v_r = 0;
 double omega = 0;
 
 //wheel and robot charactersistics
@@ -152,9 +153,9 @@ void pi_control(int k_p, int k_i)
   }
 }
 
-//////////////////////////////////////////////////////////////////////////setup + loop//////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////setup//////////////////////////////////////////////////////////////////////
 void setup() {
-  Serial.begin(9600);
+  Serial.begin(115200);
   //wheel setup
   pinMode(EB, OUTPUT);
   pinMode(I2, OUTPUT);
@@ -174,49 +175,51 @@ void setup() {
   attachInterrupt(digitalPinToInterrupt(SIGNAL_A_R), decodeEncoderTicks, RISING);
 }
 
+//////////////////////////////////////////////////////////////////////////loop//////////////////////////////////////////////////////////////////////
+
+unsigned long last_publish = 0;
+
 void loop() {
 // Get the elapsed time [ms]
     t_now = millis();
 
-    // v_d = Serial.read();
-    if (t_now - t_last >= T)
-    {
-      // Estimate the rotational speed [rad/s]
-      omega_L = 2.0 * PI * ((double)encoder_ticks_a / (double)TPR) * 1000.0 / (double)(t_now - t_last);
-      omega_R = 2.0 * PI * (-1 *(double)encoder_ticks_b / (double)TPR) * 1000.0 / (double)(t_now - t_last);
-
-      vel_L = RHO * omega_L;
-      vel_R = RHO * omega_R;
-      
-      error_wheel_l(v_d, vel_L, omega, L);
-      error_wheel_r(v_d, vel_R, omega, L);
-      pi_control(10,2);
-
-      // Print some stuff to the serial monitor 
-      // Serial.print("Estimated left wheel speed Left: ");
-      // Serial.print(omega_L);
-      // Serial.print(" rad/s");        
-      // Serial.print("Estimated left wheel speed Left: ");
-      // Serial.print(omega_R);
-      // Serial.print(" rad/s");
-      // Serial.print("\n");
-
-      Serial.print("left PWM: ");
-      Serial.print(u_l);
-
-      Serial.print(" right PWM: ");
-      Serial.println(u_r);
-
-
-      // Record the current time [ms]
-      t_last = t_now;
-
-      // Reset the encoder ticks counter
-      encoder_ticks_a = 0;
-      encoder_ticks_b = 0;
+      // Publish encoder ticks every 50ms
+    if (millis() - last_publish >= 50) {
+      Serial.print("ENC ");
+      Serial.print(encoder_ticks_a);
+      Serial.print(" ");
+      Serial.println(encoder_ticks_b);
+      last_publish = millis();
     }
 
-  
+    if (Serial.available()) {
+      String line = Serial.readStringUntil('\n');
+      line.trim();
+      if (line.startsWith("CMD")) {
+        sscanf(line.c_str(), "CMD %d %d", &v_l, &v_r);
+
+          
+        // Estimate the rotational speed [rad/s]
+        omega_L = 2.0 * PI * ((double)encoder_ticks_a / (double)TPR) * 1000.0 / (double)(t_now - t_last);
+        omega_R = 2.0 * PI * (-1 *(double)encoder_ticks_b / (double)TPR) * 1000.0 / (double)(t_now - t_last);
+
+        //estimate acutal speed
+        vel_L = RHO * omega_L;
+        vel_R = RHO * omega_R;
+
+        //estimate wheel errors and run PID      
+        error_wheel_l(v_l, vel_L, omega, L);
+        error_wheel_r(v_r, vel_R, omega, L);
+        pi_control(10,2);
+
+        // Reset the encoder ticks counter
+        encoder_ticks_a = 0;
+        encoder_ticks_b = 0;
+      }
+    
+    }
+
+  //setting motor spin direction
   if (dir_l == 0)
   {
     digitalWrite(I1, LOW);
@@ -235,7 +238,8 @@ void loop() {
     digitalWrite(I3, HIGH);
     digitalWrite(I4, LOW);
   }
-
+  
+  //send out PWM values
   analogWrite(EA, u_l);
   analogWrite(EB, u_r);
 
