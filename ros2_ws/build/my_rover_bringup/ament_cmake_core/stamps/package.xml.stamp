@@ -22,6 +22,7 @@
   <depend>robot_state_publisher</depend>
   <depend>tf2_ros</depend>
   <depend>xacro</depend>
+  <exec_depend>python3-serial</exec_depend>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 

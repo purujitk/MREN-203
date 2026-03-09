@@ -2,12 +2,12 @@
 <robot name="my_rover" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
   <!-- ========== PROPERTIES (edit these to match your robot) ========== -->
-  <xacro:property name="base_length" value="0.30"/>   <!-- meters -->
-  <xacro:property name="base_width"  value="0.25"/>
-  <xacro:property name="base_height" value="0.10"/>
-  <xacro:property name="wheel_radius" value="0.05"/>
-  <xacro:property name="wheel_width"  value="0.03"/>
-  <xacro:property name="wheel_separation" value="0.28"/> <!-- left to right -->
+  <xacro:property name="base_length" value="0.2775"/>   <!-- meters -->
+  <xacro:property name="base_width"  value="0.2"/>
+  <xacro:property name="base_height" value="0.05"/>
+  <xacro:property name="wheel_radius" value="0.0625"/>
+  <xacro:property name="wheel_width"  value="0.0635"/>
+  <xacro:property name="wheel_separation" value="0.0762"/> <!-- left to right -->
 
   <!-- ========== BASE LINK ========== -->
   <link name="base_link">

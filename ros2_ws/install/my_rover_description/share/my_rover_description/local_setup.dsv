@@ -1,1 +1,2 @@
-/home/purujitk/203/MREN-203/ros2_ws/build/my_rover_description/ament_cmake_environment_hooks/local_setup.dsv
+source;share/my_rover_description/environment/ament_prefix_path.sh
+source;share/my_rover_description/environment/path.sh

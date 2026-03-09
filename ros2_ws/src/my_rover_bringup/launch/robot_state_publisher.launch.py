@@ -36,10 +36,17 @@ def generate_launch_description():
             }
         ]
     )
-    
+
+    joint_state_publisher = Node(
+        package='joint_state_publisher',
+        executable='joint_state_publisher',
+        output='screen',
+    )
+        
     # Create launch description and add actions
     ld = LaunchDescription()
     
     ld.add_action(robot_state_publisher_node)
+    ld.add_action(joint_state_publisher)
     
     return ld

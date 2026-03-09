@@ -5,7 +5,7 @@ set(my_rover_bringup_BUILD_DEPENDS "nav2_bringup" "nav2_core" "slam_toolbox" "rp
 set(my_rover_bringup_BUILDTOOL_DEPENDS "ament_cmake")
 set(my_rover_bringup_BUILD_EXPORT_DEPENDS "nav2_bringup" "nav2_core" "slam_toolbox" "rplidar_ros" "robot_state_publisher" "tf2_ros" "xacro")
 set(my_rover_bringup_BUILDTOOL_EXPORT_DEPENDS )
-set(my_rover_bringup_EXEC_DEPENDS "nav2_bringup" "nav2_core" "slam_toolbox" "rplidar_ros" "robot_state_publisher" "tf2_ros" "xacro")
+set(my_rover_bringup_EXEC_DEPENDS "python3-serial" "nav2_bringup" "nav2_core" "slam_toolbox" "rplidar_ros" "robot_state_publisher" "tf2_ros" "xacro")
 set(my_rover_bringup_TEST_DEPENDS "ament_lint_auto" "ament_lint_common")
 set(my_rover_bringup_GROUP_DEPENDS )
 set(my_rover_bringup_MEMBER_OF_GROUPS )

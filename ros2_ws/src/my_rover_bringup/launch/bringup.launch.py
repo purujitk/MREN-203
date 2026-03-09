@@ -35,7 +35,7 @@ def generate_launch_description():
     
     arduino_bridge_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
-            os.path.join(bringup_dir, 'launch', 'arduino_bridge.launch.py')
+            os.path.join(bringup_dir, 'launch', 'ar_sr_br.launch.py')
         )
     )
     
