@@ -2,7 +2,7 @@
 # ament_cmake_core/cmake/uninstall_target/ament_cmake_uninstall_target.cmake.in
 
 function(ament_cmake_uninstall_target_remove_empty_directories path)
-  set(install_space "/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_description")
+  set(install_space "/home/robot21/MREN-203/ros2_ws/install/my_rover_description")
   if(install_space STREQUAL "")
     message(FATAL_ERROR "The CMAKE_INSTALL_PREFIX variable must not be empty")
   endif()
@@ -29,7 +29,7 @@ function(ament_cmake_uninstall_target_remove_empty_directories path)
 endfunction()
 
 # uninstall files installed using the standard install() function
-set(install_manifest "/home/purujitk/203/MREN-203/ros2_ws/build/my_rover_description/install_manifest.txt")
+set(install_manifest "/home/robot21/MREN-203/ros2_ws/build/my_rover_description/install_manifest.txt")
 if(NOT EXISTS "${install_manifest}")
   message(FATAL_ERROR "Cannot find install manifest: ${install_manifest}")
 endif()

@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/purujitk/203/MREN-203/ros2_ws/src/my_rover_bringup
+CMAKE_SOURCE_DIR = /home/robot21/MREN-203/ros2_ws/src/my_rover_bringup
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/purujitk/203/MREN-203/ros2_ws/build/my_rover_bringup
+CMAKE_BINARY_DIR = /home/robot21/MREN-203/ros2_ws/build/my_rover_bringup
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/purujitk/203/MREN-203/ros2_ws/build/my_rover_bringup/CMakeFiles /home/purujitk/203/MREN-203/ros2_ws/build/my_rover_bringup//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot21/MREN-203/ros2_ws/build/my_rover_bringup/CMakeFiles /home/robot21/MREN-203/ros2_ws/build/my_rover_bringup//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/purujitk/203/MREN-203/ros2_ws/build/my_rover_bringup/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot21/MREN-203/ros2_ws/build/my_rover_bringup/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

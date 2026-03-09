@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/purujitk/203/MREN-203/ros2_ws/src/rplidar_ros
+CMAKE_SOURCE_DIR = /home/robot21/MREN-203/ros2_ws/src/rplidar_ros
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/purujitk/203/MREN-203/ros2_ws/build/rplidar_ros
+CMAKE_BINARY_DIR = /home/robot21/MREN-203/ros2_ws/build/rplidar_ros
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/purujitk/203/MREN-203/ros2_ws/build/rplidar_ros && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/purujitk/203/MREN-203/ros2_ws/src/rplidar_ros /home/purujitk/203/MREN-203/ros2_ws/src/rplidar_ros /home/purujitk/203/MREN-203/ros2_ws/build/rplidar_ros /home/purujitk/203/MREN-203/ros2_ws/build/rplidar_ros /home/purujitk/203/MREN-203/ros2_ws/build/rplidar_ros/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/robot21/MREN-203/ros2_ws/build/rplidar_ros && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robot21/MREN-203/ros2_ws/src/rplidar_ros /home/robot21/MREN-203/ros2_ws/src/rplidar_ros /home/robot21/MREN-203/ros2_ws/build/rplidar_ros /home/robot21/MREN-203/ros2_ws/build/rplidar_ros /home/robot21/MREN-203/ros2_ws/build/rplidar_ros/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

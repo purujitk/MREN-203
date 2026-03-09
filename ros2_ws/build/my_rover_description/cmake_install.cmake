@@ -1,8 +1,8 @@
-# Install script for directory: /home/purujitk/203/MREN-203/ros2_ws/src/my_rover_description
+# Install script for directory: /home/robot21/MREN-203/ros2_ws/src/my_rover_description
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/purujitk/203/MREN-203/ros2_ws/install/my_rover_description")
+  set(CMAKE_INSTALL_PREFIX "/home/robot21/MREN-203/ros2_ws/install/my_rover_description")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -44,17 +44,17 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_rover_description" TYPE DIRECTORY FILES
-    "/home/purujitk/203/MREN-203/ros2_ws/src/my_rover_description/urdf"
-    "/home/purujitk/203/MREN-203/ros2_ws/src/my_rover_description/rviz"
+    "/home/robot21/MREN-203/ros2_ws/src/my_rover_description/urdf"
+    "/home/robot21/MREN-203/ros2_ws/src/my_rover_description/rviz"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/purujitk/203/MREN-203/ros2_ws/build/my_rover_description/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/my_rover_description")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/robot21/MREN-203/ros2_ws/build/my_rover_description/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/my_rover_description")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/purujitk/203/MREN-203/ros2_ws/build/my_rover_description/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/my_rover_description")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/robot21/MREN-203/ros2_ws/build/my_rover_description/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/my_rover_description")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -62,7 +62,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_rover_description/environment" TYPE FILE FILES "/home/purujitk/203/MREN-203/ros2_ws/build/my_rover_description/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_rover_description/environment" TYPE FILE FILES "/home/robot21/MREN-203/ros2_ws/build/my_rover_description/ament_cmake_environment_hooks/ament_prefix_path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -70,42 +70,42 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_rover_description/environment" TYPE FILE FILES "/home/purujitk/203/MREN-203/ros2_ws/build/my_rover_description/ament_cmake_environment_hooks/path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_rover_description/environment" TYPE FILE FILES "/home/robot21/MREN-203/ros2_ws/build/my_rover_description/ament_cmake_environment_hooks/path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_rover_description" TYPE FILE FILES "/home/purujitk/203/MREN-203/ros2_ws/build/my_rover_description/ament_cmake_environment_hooks/local_setup.bash")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_rover_description" TYPE FILE FILES "/home/robot21/MREN-203/ros2_ws/build/my_rover_description/ament_cmake_environment_hooks/local_setup.bash")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_rover_description" TYPE FILE FILES "/home/purujitk/203/MREN-203/ros2_ws/build/my_rover_description/ament_cmake_environment_hooks/local_setup.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_rover_description" TYPE FILE FILES "/home/robot21/MREN-203/ros2_ws/build/my_rover_description/ament_cmake_environment_hooks/local_setup.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_rover_description" TYPE FILE FILES "/home/purujitk/203/MREN-203/ros2_ws/build/my_rover_description/ament_cmake_environment_hooks/local_setup.zsh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_rover_description" TYPE FILE FILES "/home/robot21/MREN-203/ros2_ws/build/my_rover_description/ament_cmake_environment_hooks/local_setup.zsh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_rover_description" TYPE FILE FILES "/home/purujitk/203/MREN-203/ros2_ws/build/my_rover_description/ament_cmake_environment_hooks/local_setup.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_rover_description" TYPE FILE FILES "/home/robot21/MREN-203/ros2_ws/build/my_rover_description/ament_cmake_environment_hooks/local_setup.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_rover_description" TYPE FILE FILES "/home/purujitk/203/MREN-203/ros2_ws/build/my_rover_description/ament_cmake_environment_hooks/package.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_rover_description" TYPE FILE FILES "/home/robot21/MREN-203/ros2_ws/build/my_rover_description/ament_cmake_environment_hooks/package.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/purujitk/203/MREN-203/ros2_ws/build/my_rover_description/ament_cmake_index/share/ament_index/resource_index/packages/my_rover_description")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/robot21/MREN-203/ros2_ws/build/my_rover_description/ament_cmake_index/share/ament_index/resource_index/packages/my_rover_description")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_rover_description/cmake" TYPE FILE FILES
-    "/home/purujitk/203/MREN-203/ros2_ws/build/my_rover_description/ament_cmake_core/my_rover_descriptionConfig.cmake"
-    "/home/purujitk/203/MREN-203/ros2_ws/build/my_rover_description/ament_cmake_core/my_rover_descriptionConfig-version.cmake"
+    "/home/robot21/MREN-203/ros2_ws/build/my_rover_description/ament_cmake_core/my_rover_descriptionConfig.cmake"
+    "/home/robot21/MREN-203/ros2_ws/build/my_rover_description/ament_cmake_core/my_rover_descriptionConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_rover_description" TYPE FILE FILES "/home/purujitk/203/MREN-203/ros2_ws/src/my_rover_description/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_rover_description" TYPE FILE FILES "/home/robot21/MREN-203/ros2_ws/src/my_rover_description/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -116,5 +116,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/purujitk/203/MREN-203/ros2_ws/build/my_rover_description/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/robot21/MREN-203/ros2_ws/build/my_rover_description/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

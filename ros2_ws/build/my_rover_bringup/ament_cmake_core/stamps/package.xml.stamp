@@ -20,6 +20,7 @@
 
   <!-- Other dependencies -->
   <depend>robot_state_publisher</depend>
+  <depend>joint_state_publisher</depend>
   <depend>tf2_ros</depend>
   <depend>xacro</depend>
   <exec_depend>python3-serial</exec_depend>
