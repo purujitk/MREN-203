@@ -1,1 +1,15 @@
-/home/purujitk/203/MREN-203/ros2_ws/src/my_rover_bringup/config/my_rover.yaml
+ar_sr_br:
+  ros__parameters:
+    # Serial
+    serial_port: "/dev/ttyUSB0"
+    baud_rate: 115200
+
+    # Robot geometry — measure these on your rover
+    wheel_radius: 0.0591        # metres
+    wheel_base: 0.2428           # metres (left wheel centre to right wheel centre)
+    ticks_per_rev: 3000       # encoder pulses per full wheel rotation
+
+    # Velocity limits
+    max_linear_vel: 0.3        # m/s
+    max_angular_vel: 1.5       # rad/s
+    max_pwm: 255
