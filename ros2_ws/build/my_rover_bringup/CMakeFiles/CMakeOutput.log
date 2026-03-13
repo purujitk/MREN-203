@@ -435,3 +435,151 @@ Parsed CXX implicit link information from above output:
   implicit fwks: []
 
 
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/robot21/MREN-203/ros2_ws/build/my_rover_bringup/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_564da/fast && gmake[1]: Entering directory '/home/robot21/MREN-203/ros2_ws/build/my_rover_bringup/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_564da.dir/build.make CMakeFiles/cmTC_564da.dir/build
+gmake[2]: Entering directory '/home/robot21/MREN-203/ros2_ws/build/my_rover_bringup/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_564da.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_564da.dir/CheckIncludeFile.c.o -c /home/robot21/MREN-203/ros2_ws/build/my_rover_bringup/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_564da
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_564da.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_564da.dir/CheckIncludeFile.c.o -o cmTC_564da 
+gmake[2]: Leaving directory '/home/robot21/MREN-203/ros2_ws/build/my_rover_bringup/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/home/robot21/MREN-203/ros2_ws/build/my_rover_bringup/CMakeFiles/CMakeTmp'
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD succeeded with the following output:
+Change Dir: /home/robot21/MREN-203/ros2_ws/build/my_rover_bringup/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c041e/fast && gmake[1]: Entering directory '/home/robot21/MREN-203/ros2_ws/build/my_rover_bringup/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_c041e.dir/build.make CMakeFiles/cmTC_c041e.dir/build
+gmake[2]: Entering directory '/home/robot21/MREN-203/ros2_ws/build/my_rover_bringup/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c041e.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_c041e.dir/src.c.o -c /home/robot21/MREN-203/ros2_ws/build/my_rover_bringup/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_c041e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c041e.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_c041e.dir/src.c.o -o cmTC_c041e 
+gmake[2]: Leaving directory '/home/robot21/MREN-203/ros2_ws/build/my_rover_bringup/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/home/robot21/MREN-203/ros2_ws/build/my_rover_bringup/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function XOpenDisplay exists in the /usr/lib/aarch64-linux-gnu/libX11.so;/usr/lib/aarch64-linux-gnu/libXext.so passed with the following output:
+Change Dir: /home/robot21/MREN-203/ros2_ws/build/my_rover_bringup/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_10781/fast && gmake[1]: Entering directory '/home/robot21/MREN-203/ros2_ws/build/my_rover_bringup/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_10781.dir/build.make CMakeFiles/cmTC_10781.dir/build
+gmake[2]: Entering directory '/home/robot21/MREN-203/ros2_ws/build/my_rover_bringup/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_10781.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay -o CMakeFiles/cmTC_10781.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_10781
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_10781.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=XOpenDisplay CMakeFiles/cmTC_10781.dir/CheckFunctionExists.c.o -o cmTC_10781  /usr/lib/aarch64-linux-gnu/libX11.so /usr/lib/aarch64-linux-gnu/libXext.so 
+gmake[2]: Leaving directory '/home/robot21/MREN-203/ros2_ws/build/my_rover_bringup/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/home/robot21/MREN-203/ros2_ws/build/my_rover_bringup/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function gethostbyname exists passed with the following output:
+Change Dir: /home/robot21/MREN-203/ros2_ws/build/my_rover_bringup/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_370d9/fast && gmake[1]: Entering directory '/home/robot21/MREN-203/ros2_ws/build/my_rover_bringup/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_370d9.dir/build.make CMakeFiles/cmTC_370d9.dir/build
+gmake[2]: Entering directory '/home/robot21/MREN-203/ros2_ws/build/my_rover_bringup/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_370d9.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname -o CMakeFiles/cmTC_370d9.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_370d9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_370d9.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=gethostbyname CMakeFiles/cmTC_370d9.dir/CheckFunctionExists.c.o -o cmTC_370d9 
+gmake[2]: Leaving directory '/home/robot21/MREN-203/ros2_ws/build/my_rover_bringup/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/home/robot21/MREN-203/ros2_ws/build/my_rover_bringup/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function connect exists passed with the following output:
+Change Dir: /home/robot21/MREN-203/ros2_ws/build/my_rover_bringup/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_16154/fast && gmake[1]: Entering directory '/home/robot21/MREN-203/ros2_ws/build/my_rover_bringup/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_16154.dir/build.make CMakeFiles/cmTC_16154.dir/build
+gmake[2]: Entering directory '/home/robot21/MREN-203/ros2_ws/build/my_rover_bringup/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_16154.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=connect -o CMakeFiles/cmTC_16154.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_16154
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_16154.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=connect CMakeFiles/cmTC_16154.dir/CheckFunctionExists.c.o -o cmTC_16154 
+gmake[2]: Leaving directory '/home/robot21/MREN-203/ros2_ws/build/my_rover_bringup/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/home/robot21/MREN-203/ros2_ws/build/my_rover_bringup/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function remove exists passed with the following output:
+Change Dir: /home/robot21/MREN-203/ros2_ws/build/my_rover_bringup/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_da1ab/fast && gmake[1]: Entering directory '/home/robot21/MREN-203/ros2_ws/build/my_rover_bringup/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_da1ab.dir/build.make CMakeFiles/cmTC_da1ab.dir/build
+gmake[2]: Entering directory '/home/robot21/MREN-203/ros2_ws/build/my_rover_bringup/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_da1ab.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=remove -o CMakeFiles/cmTC_da1ab.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_da1ab
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_da1ab.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=remove CMakeFiles/cmTC_da1ab.dir/CheckFunctionExists.c.o -o cmTC_da1ab 
+gmake[2]: Leaving directory '/home/robot21/MREN-203/ros2_ws/build/my_rover_bringup/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/home/robot21/MREN-203/ros2_ws/build/my_rover_bringup/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function shmat exists passed with the following output:
+Change Dir: /home/robot21/MREN-203/ros2_ws/build/my_rover_bringup/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_44012/fast && gmake[1]: Entering directory '/home/robot21/MREN-203/ros2_ws/build/my_rover_bringup/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_44012.dir/build.make CMakeFiles/cmTC_44012.dir/build
+gmake[2]: Entering directory '/home/robot21/MREN-203/ros2_ws/build/my_rover_bringup/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_44012.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shmat -o CMakeFiles/cmTC_44012.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_44012
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_44012.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=shmat CMakeFiles/cmTC_44012.dir/CheckFunctionExists.c.o -o cmTC_44012 
+gmake[2]: Leaving directory '/home/robot21/MREN-203/ros2_ws/build/my_rover_bringup/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/home/robot21/MREN-203/ros2_ws/build/my_rover_bringup/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function IceConnectionNumber exists in the ICE passed with the following output:
+Change Dir: /home/robot21/MREN-203/ros2_ws/build/my_rover_bringup/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_83946/fast && gmake[1]: Entering directory '/home/robot21/MREN-203/ros2_ws/build/my_rover_bringup/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_83946.dir/build.make CMakeFiles/cmTC_83946.dir/build
+gmake[2]: Entering directory '/home/robot21/MREN-203/ros2_ws/build/my_rover_bringup/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_83946.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber -o CMakeFiles/cmTC_83946.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_83946
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_83946.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=IceConnectionNumber CMakeFiles/cmTC_83946.dir/CheckFunctionExists.c.o -o cmTC_83946  -lICE 
+gmake[2]: Leaving directory '/home/robot21/MREN-203/ros2_ws/build/my_rover_bringup/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/home/robot21/MREN-203/ros2_ws/build/my_rover_bringup/CMakeFiles/CMakeTmp'
+
+
+

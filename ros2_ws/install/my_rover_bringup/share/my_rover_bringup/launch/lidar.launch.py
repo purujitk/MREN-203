@@ -19,8 +19,11 @@ def generate_launch_description():
                 'launch',
                 'rplidar_a1_launch.py'
             )
-        )
-    )
+        ),
+        launch_arguments={
+            'frame_id': 'scan',
+            'serial_port': '/dev/ttyUSB0',
+        }.items()    )
 
     return LaunchDescription([
         rplidar_launch

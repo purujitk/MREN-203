@@ -110,7 +110,7 @@ class ar_sr_br(Node):
         odom = Odometry()
         odom.header.stamp    = now.to_msg()
         odom.header.frame_id = 'odom'
-        odom.child_frame_id  = 'base_link'
+        odom.child_frame_id  = 'base_footprint'
 
         odom.pose.pose.position.x = self.x
         odom.pose.pose.position.y = self.y
@@ -125,7 +125,7 @@ class ar_sr_br(Node):
         tf = TransformStamped()
         tf.header.stamp    = now.to_msg()
         tf.header.frame_id = 'odom'
-        tf.child_frame_id  = 'base_link'
+        tf.child_frame_id  = 'base_footprint'
         tf.transform.translation.x = self.x
         tf.transform.translation.y = self.y
         tf.transform.rotation.z    = math.sin(self.theta / 2.0)
