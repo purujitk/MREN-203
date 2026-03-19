@@ -1,1 +1,1 @@
-/home/purujitk/203/MREN-203/ros2_ws/build/my_rover_bringup/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/my_rover_bringup
+nav2_bringup;nav2_core;explore_lite;nav2_msgs;slam_toolbox;rplidar_ros;robot_state_publisher;joint_state_publisher;tf2_ros;xacro;python3-serial;ament_lint_auto;ament_lint_common

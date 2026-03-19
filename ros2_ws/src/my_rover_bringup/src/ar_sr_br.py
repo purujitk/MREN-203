@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 '''
 Arduino Serial Bridge
 
@@ -7,8 +8,6 @@ MREN 203
 - subs to /cmd_vel output from NAV2 and sends serial commands through UART SERIAL
 - Publishes encoder data back to /odom
 '''
-
-#!/usr/bin/env python3
 
 import rclpy
 from rclpy.node import Node
@@ -28,8 +27,11 @@ from nav_msgs.msg import Odometry
 
 
 #Definitions
-SERIAL_PORT = '/dev/ttyUSB0'
+SERIAL_PORT = '/dev/ttyACM0'
 BAUD_RATE = 115200
+TPR = 3000
+RADIUS = .0625
+LENGTH = 0.2775
 
 class ar_sr_br(Node):
 
@@ -42,8 +44,8 @@ class ar_sr_br(Node):
         self.get_logger().info(f'Connected to Arduino on {SERIAL_PORT}')
 
         #ROS Subscribers/Publishers
-        self.cmd_pub_ = self.create_subscription(Twist, '/cmd_vel', self.cmd_vel_callback, 10)
-        self.odom_sub = self.create_publisher(Odometry,'/odom',10)
+        self.cmd_sub_ = self.create_subscription(Twist, '/cmd_vel', self.cmd_vel_callback, 10)
+        self.odom_pub = self.create_publisher(Odometry,'/odom',10)
         self.tf_broadcaster = TransformBroadcaster(self)
 
         # Odometry state
@@ -53,11 +55,6 @@ class ar_sr_br(Node):
         self.prev_left_ticks  = 0
         self.prev_right_ticks = 0
         self.last_time = self.get_clock().now()
-        self.tpr = self.get_parameter('ticks_per_rev').value
-
-        #robot dimenions
-        self.wheel_radius = self.get_parameter('wheel_radius').value
-        self.wheel_base = self.get_parameter('wheel_base').value
 
         # Timer to read serial at 20Hz
         self.create_timer(0.05, self.read_serial)
@@ -67,6 +64,7 @@ class ar_sr_br(Node):
         linear = msg.linear.x
         angular = msg.angular.z
 
+        self.get_logger().info(f'angular velocity {angular}')
         #send out serial command
         cmd = f"CMD {linear} {angular}\n"
         self.ser.write(cmd.encode())
@@ -81,6 +79,7 @@ class ar_sr_br(Node):
                         left_ticks  = int(parts[1])
                         right_ticks = int(parts[2])
                         self.update_odometry(left_ticks, right_ticks)
+                       	self.get_logger().info(f'Left Ticks: {parts[1]} Right Ticks: {parts[2]}')
         except Exception as e:
             self.get_logger().warn(f'Serial read error: {e}')
 
@@ -90,14 +89,14 @@ class ar_sr_br(Node):
         self.last_time = now
 
         # Ticks delta since last reading
-        d_left  = (left_ticks  - self.prev_left_ticks)  * (2 * math.pi * self.wheel_radius / self.tpr)
-        d_right = (right_ticks - self.prev_right_ticks) * (2 * math.pi * self.wheel_radius / self.tpr)
+        d_left  = (left_ticks)  * (2 * math.pi * RADIUS/TPR)
+        d_right = -1* (right_ticks) * (2 * math.pi * RADIUS/TPR)
         self.prev_left_ticks  = left_ticks
         self.prev_right_ticks = right_ticks
 
         # Distance and heading change
         d_center = (d_left + d_right) / 2.0
-        d_theta  = (d_right - d_left) / self.wheel_base
+        d_theta  = (d_right - d_left) / LENGTH
 
         # Update pose
         self.x     += d_center * math.cos(self.theta + d_theta / 2.0)
@@ -112,7 +111,7 @@ class ar_sr_br(Node):
         odom = Odometry()
         odom.header.stamp    = now.to_msg()
         odom.header.frame_id = 'odom'
-        odom.child_frame_id  = 'base_link'
+        odom.child_frame_id  = 'base_footprint'
 
         odom.pose.pose.position.x = self.x
         odom.pose.pose.position.y = self.y
@@ -127,7 +126,7 @@ class ar_sr_br(Node):
         tf = TransformStamped()
         tf.header.stamp    = now.to_msg()
         tf.header.frame_id = 'odom'
-        tf.child_frame_id  = 'base_link'
+        tf.child_frame_id  = 'base_footprint'
         tf.transform.translation.x = self.x
         tf.transform.translation.y = self.y
         tf.transform.rotation.z    = math.sin(self.theta / 2.0)
@@ -139,11 +138,11 @@ class ar_sr_br(Node):
 def main(args=None):
     rclpy.init(args=args)
 
-    ar_sr_br = ar_sr_br()
+    ar_sr_br_ = ar_sr_br()
 
-    rclpy.spin(ar_sr_br)
+    rclpy.spin(ar_sr_br_)
 
-    ar_sr_br.destroy_node()
+    ar_sr_br_.destroy_node()
     rclpy.shutdown()
 
 

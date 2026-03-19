@@ -9,54 +9,54 @@ Launches tehse in order:
     5. Nav2
 
 '''
-
 import os
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
-from launch.actions import IncludeLaunchDescription
+from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription, TimerAction
 from launch.launch_description_sources import PythonLaunchDescriptionSource
-
 
 def generate_launch_description():
     bringup_dir = get_package_share_directory('my_rover_bringup')
-    
-    # Include each sub-launch
+
     robot_state_pub_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             os.path.join(bringup_dir, 'launch', 'robot_state_publisher.launch.py')
         )
     )
-    
+
     lidar_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             os.path.join(bringup_dir, 'launch', 'lidar.launch.py')
         )
     )
-    
+
     arduino_bridge_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
-            os.path.join(bringup_dir, 'launch', 'arduino_bridge.launch.py')
+            os.path.join(bringup_dir, 'launch', 'ar_sr_br.launch.py')
         )
     )
-    
+
     slam_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             os.path.join(bringup_dir, 'launch', 'slam.launch.py')
         )
     )
-    
+
     nav2_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             os.path.join(bringup_dir, 'launch', 'nav2.launch.py')
         )
     )
-    
-    # Combine them
+
     ld = LaunchDescription()
+
+    # Start sensors and SLAM immediately
     ld.add_action(robot_state_pub_launch)
     ld.add_action(lidar_launch)
     ld.add_action(arduino_bridge_launch)
     ld.add_action(slam_launch)
-    ld.add_action(nav2_launch)
-    
+
+    # Delay Nav2 to give SLAM time to initialize and publish first map
+    ld.add_action(TimerAction(period=10.0, actions=[nav2_launch]))
+
     return ld

@@ -1,1 +1,37 @@
-/home/purujitk/203/MREN-203/ros2_ws/src/my_rover_bringup/package.xml
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>my_rover_bringup</name>
+  <version>0.0.0</version>
+  <description>TODO: Package description</description>
+  <maintainer email="purujitkantiya@gmail.com">purujitk</maintainer>
+  <license>TODO: License declaration</license>
+
+
+  <!-- Nav2 dependencies -->
+  <depend>nav2_bringup</depend>
+  <depend>nav2_core</depend>
+  <depend>explore_lite</depend>
+  <depend>nav2_msgs</depend>
+  <!-- SLAM dependencies -->
+  <depend>slam_toolbox</depend>
+  
+  <!-- LIDAR dependenices -->
+  <depend>rplidar_ros</depend>
+
+  <!-- Other dependencies -->
+  <depend>robot_state_publisher</depend>
+  <depend>joint_state_publisher</depend>
+  <depend>tf2_ros</depend>
+  <depend>xacro</depend>
+  <exec_depend>python3-serial</exec_depend>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

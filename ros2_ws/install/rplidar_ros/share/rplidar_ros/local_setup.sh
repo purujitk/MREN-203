@@ -1,1 +1,0 @@
-/home/purujitk/203/MREN-203/ros2_ws/build/rplidar_ros/ament_cmake_environment_hooks/local_setup.sh

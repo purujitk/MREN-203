@@ -1,1 +1,0 @@
-/home/purujitk/203/MREN-203/ros2_ws/src/rplidar_ros/launch/view_rplidar_s1_launch.py

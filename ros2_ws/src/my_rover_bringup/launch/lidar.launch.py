@@ -1,3 +1,4 @@
+
 '''
 Lidar Launch
 
@@ -16,10 +17,13 @@ def generate_launch_description():
             os.path.join(
                 get_package_share_directory('rplidar_ros'),
                 'launch',
-                'view_rplidar_a1_launch.py'
+                'rplidar_a1_launch.py'
             )
-        )
-    )
+        ),
+        launch_arguments={
+            'frame_id': 'scan',
+            'serial_port': '/dev/ttyUSB0',
+        }.items()    )
 
     return LaunchDescription([
         rplidar_launch

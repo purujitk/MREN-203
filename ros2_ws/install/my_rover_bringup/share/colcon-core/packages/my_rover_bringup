@@ -1,1 +1,1 @@
-nav2_bringup:nav2_core:robot_state_publisher:rplidar_ros:slam_toolbox:tf2_ros:xacro
+explore_lite:joint_state_publisher:nav2_bringup:nav2_core:nav2_msgs:python3-serial:robot_state_publisher:rplidar_ros:slam_toolbox:tf2_ros:xacro

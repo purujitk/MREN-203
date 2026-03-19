@@ -1,1 +1,1 @@
-nav2_bringup;nav2_core;slam_toolbox;rplidar_ros;robot_state_publisher;tf2_ros;xacro;ament_lint_auto;ament_lint_common
+nav2_bringup;nav2_core;explore_lite;nav2_msgs;slam_toolbox;rplidar_ros;robot_state_publisher;joint_state_publisher;tf2_ros;xacro;python3-serial;ament_lint_auto;ament_lint_common
