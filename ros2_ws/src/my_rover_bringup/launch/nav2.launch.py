@@ -54,5 +54,4 @@ def generate_launch_description():
     ld = LaunchDescription()
     ld.add_action(declare_use_sim_time_cmd)
     ld.add_action(nav2_launch)
-    ld.add_action(TimerAction(period=8.0, actions=[explore_node]))
     return ld

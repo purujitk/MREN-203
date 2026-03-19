@@ -10,6 +10,7 @@
 /home/robot21/MREN-203/ros2_ws/install/my_rover_bringup/share/my_rover_bringup/config/mapper_params_online_async.yaml
 /home/robot21/MREN-203/ros2_ws/install/my_rover_bringup/share/my_rover_bringup/config/nav2_params.yaml
 /home/robot21/MREN-203/ros2_ws/install/my_rover_bringup/share/my_rover_bringup/config/my_rover.yaml
+/home/robot21/MREN-203/ros2_ws/install/my_rover_bringup/share/my_rover_bringup/config/copy.txt
 /home/robot21/MREN-203/ros2_ws/install/my_rover_bringup/share/ament_index/resource_index/package_run_dependencies/my_rover_bringup
 /home/robot21/MREN-203/ros2_ws/install/my_rover_bringup/share/ament_index/resource_index/parent_prefix_path/my_rover_bringup
 /home/robot21/MREN-203/ros2_ws/install/my_rover_bringup/share/my_rover_bringup/environment/ament_prefix_path.sh

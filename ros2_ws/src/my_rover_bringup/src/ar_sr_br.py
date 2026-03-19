@@ -64,6 +64,7 @@ class ar_sr_br(Node):
         linear = msg.linear.x
         angular = msg.angular.z
 
+        self.get_logger().info(f'angular velocity {angular}')
         #send out serial command
         cmd = f"CMD {linear} {angular}\n"
         self.ser.write(cmd.encode())
@@ -78,7 +79,7 @@ class ar_sr_br(Node):
                         left_ticks  = int(parts[1])
                         right_ticks = int(parts[2])
                         self.update_odometry(left_ticks, right_ticks)
-                        self.get_logger().info(f'Left Ticks: {parts[1]} Right Ticks: {parts[2]}')
+                       	self.get_logger().info(f'Left Ticks: {parts[1]} Right Ticks: {parts[2]}')
         except Exception as e:
             self.get_logger().warn(f'Serial read error: {e}')
 
@@ -88,8 +89,8 @@ class ar_sr_br(Node):
         self.last_time = now
 
         # Ticks delta since last reading
-        d_left  = (left_ticks  - self.prev_left_ticks)  * (2 * math.pi * RADIUS/TPR)
-        d_right = (right_ticks - self.prev_right_ticks) * (2 * math.pi * RADIUS/TPR)
+        d_left  = (left_ticks)  * (2 * math.pi * RADIUS/TPR)
+        d_right = -1* (right_ticks) * (2 * math.pi * RADIUS/TPR)
         self.prev_left_ticks  = left_ticks
         self.prev_right_ticks = right_ticks
 

@@ -197,7 +197,6 @@ void loop() {
       line.trim();
       if (line.startsWith("CMD")) {
         sscanf(line.c_str(), "CMD %d %d", &v_l, &v_r);
-
           
         // Estimate the rotational speed [rad/s]
         omega_L = 2.0 * PI * ((double)encoder_ticks_a / (double)TPR) * 1000.0 / (double)(t_now - t_last);
