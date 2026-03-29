@@ -36,11 +36,11 @@ def generate_launch_description():
         )
     )
 
-    slam_launch = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(
-            os.path.join(bringup_dir, 'launch', 'slam.launch.py')
-        )
-    )
+    #slam_launch = IncludeLaunchDescription(
+   #     PythonLaunchDescriptionSource(
+  #          os.path.join(bringup_dir, 'launch', 'slam.launch.py')
+ #       )
+#    )
 
     nav2_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
@@ -54,7 +54,7 @@ def generate_launch_description():
     ld.add_action(robot_state_pub_launch)
     ld.add_action(lidar_launch)
     ld.add_action(arduino_bridge_launch)
-    ld.add_action(slam_launch)
+   # ld.add_action(slam_launch)
 
     # Delay Nav2 to give SLAM time to initialize and publish first map
     ld.add_action(TimerAction(period=10.0, actions=[nav2_launch]))

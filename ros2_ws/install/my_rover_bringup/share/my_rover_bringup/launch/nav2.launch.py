@@ -12,6 +12,8 @@ def generate_launch_description():
 
     nav2_params_file = os.path.join(bringup_dir, 'config', 'nav2_params.yaml')
 
+    nav2_map = os.path.join(bringup_dir, 'maps', '203_arena.yaml')
+
     use_sim_time = LaunchConfiguration('use_sim_time')
     declare_use_sim_time_cmd = DeclareLaunchArgument(
         'use_sim_time',
@@ -23,32 +25,13 @@ def generate_launch_description():
     # Your main bringup already runs SLAM toolbox
     nav2_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
-            os.path.join(nav2_bringup_dir, 'launch', 'navigation_launch.py')
+            os.path.join(nav2_bringup_dir, 'launch', 'localization_launch.py') #change to navigation if mapping 
         ),
         launch_arguments={
             'params_file': nav2_params_file,
             'use_sim_time': use_sim_time,
+            'map': nav2_map,
         }.items()
-    )
-
-    # Frontier exploration node
-    explore_node = Node(
-        package='explore_lite',
-        executable='explore',
-        name='explore',
-        output='screen',
-        parameters=[{
-            'robot_base_frame': 'base_footprint',
-            'costmap_topic': '/map',
-            'costmap_updates_topic': '/map_updates',
-            'visualize': True,
-            'planner_frequency': 0.33,
-            'progress_timeout': 30.0,
-            'potential_scale': 3.0,
-            'gain_scale': 1.0,
-            'min_frontier_size': 0.75,
-            'use_sim_time': use_sim_time,
-        }]
     )
 
     ld = LaunchDescription()

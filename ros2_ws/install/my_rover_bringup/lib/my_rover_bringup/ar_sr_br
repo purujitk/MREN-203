@@ -32,6 +32,10 @@ BAUD_RATE = 115200
 TPR = 3000
 RADIUS = .0625
 LENGTH = 0.2775
+MAX_TICKS = 500  # max realistic ticks per cycle
+
+START_BYTE = 0xAA
+PACKET_SIZE = 9  # 4 + 4 + 1 checksum
 
 class ar_sr_br(Node):
 
@@ -61,8 +65,8 @@ class ar_sr_br(Node):
 
     def cmd_vel_callback(self, msg):
         #linear + angular velocities (that matter)
-        linear = msg.linear.x
-        angular = msg.angular.z
+        linear = msg.linear.x*100
+        angular = msg.angular.z*100
 
         self.get_logger().info(f'angular velocity {angular}')
         #send out serial command
@@ -75,14 +79,42 @@ class ar_sr_br(Node):
                 line = self.ser.readline().decode('utf-8').strip()
                 if line.startswith("ENC"):
                     parts = line.split()
-                    if len(parts) == 3:
+                    if len(parts) == 4:  # ENC left right checksum
                         left_ticks  = int(parts[1])
                         right_ticks = int(parts[2])
+                        received_checksum = int(parts[3])
+
+                        # Recompute checksum
+                        expected = 0
+                        for val in [left_ticks, right_ticks]:
+                            expected ^= (val >> 24) & 0xFF
+                            expected ^= (val >> 16) & 0xFF
+                            expected ^= (val >> 8)  & 0xFF
+                            expected ^= (val)       & 0xFF
+                        expected &= 0xFF  # keep it a single byte
+
+                        if received_checksum != expected:
+                            self.get_logger().warn(
+                                f"Checksum FAIL — got {received_checksum}, "
+                                f"expected {expected}. Packet dropped."
+                            )
+                            return  # discard corrupted packet
+
+                        # Plausibility check as second layer of defense
+                        if abs(left_ticks) > MAX_TICKS or abs(right_ticks) > MAX_TICKS:
+                            self.get_logger().warn(
+                                f"Tick sanity check FAIL — "
+                                f"L={left_ticks} R={right_ticks}. Packet dropped."
+                            )
+                            return
+
+                        self.get_logger().info(
+                            f'Left Ticks: {left_ticks} Right Ticks: {right_ticks}'
+                        )
                         self.update_odometry(left_ticks, right_ticks)
-                       	self.get_logger().info(f'Left Ticks: {parts[1]} Right Ticks: {parts[2]}')
+
         except Exception as e:
             self.get_logger().warn(f'Serial read error: {e}')
-
     def update_odometry(self, left_ticks, right_ticks):
         now = self.get_clock().now()
         dt  = (now - self.last_time).nanoseconds / 1e9
@@ -96,7 +128,7 @@ class ar_sr_br(Node):
 
         # Distance and heading change
         d_center = (d_left + d_right) / 2.0
-        d_theta  = (d_right - d_left) / LENGTH
+        d_theta  = (d_right - d_left) / (LENGTH*2.0)
 
         # Update pose
         self.x     += d_center * math.cos(self.theta + d_theta / 2.0)
