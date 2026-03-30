@@ -11,7 +11,6 @@ def generate_launch_description():
     nav2_bringup_dir = get_package_share_directory('nav2_bringup')
 
     nav2_params_file = os.path.join(bringup_dir, 'config', 'nav2_params.yaml')
-
     nav2_map = os.path.join(bringup_dir, 'maps', '203_arena.yaml')
 
     use_sim_time = LaunchConfiguration('use_sim_time')
@@ -25,12 +24,13 @@ def generate_launch_description():
     # Your main bringup already runs SLAM toolbox
     nav2_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
-            os.path.join(nav2_bringup_dir, 'launch', 'localization_launch.py') #change to navigation if mapping 
+            os.path.join(nav2_bringup_dir, 'launch', 'bringup_launch.py') #change to navigation if mapping navigation_launch.py
         ),
         launch_arguments={
             'params_file': nav2_params_file,
             'use_sim_time': use_sim_time,
             'map': nav2_map,
+            'use_composition': 'False',
         }.items()
     )
 
